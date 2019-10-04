@@ -36,6 +36,14 @@
   color: var(--black);
 }
 
+.theme-text {
+  color: var(--theme-text);
+}
+
+.bg-theme-1 {
+  background-color: var(--theme-1);
+}
+
 .bg-primary {
   background-color: var(--primary);
 }

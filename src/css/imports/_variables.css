@@ -9,7 +9,10 @@
 	--grey-3: rgba(89, 87, 86, 1);
 	--grey-4: rgba(66, 64, 64, 1);
 	--black: rgba(43, 37, 35, 1);
-	--bg-grey: rgba();
+
+	--theme-1: rgba(40, 51, 35, 1);
+	--theme-2: #3d3b40;
+	--theme-text: #75715E;
 
 	/* Typography */
 	--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
