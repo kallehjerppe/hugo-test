@@ -44,6 +44,10 @@
   background-color: var(--theme-1);
 }
 
+.bg-theme-2 {
+  background-color: var(--theme-2);
+}
+
 .bg-primary {
   background-color: var(--primary);
 }
