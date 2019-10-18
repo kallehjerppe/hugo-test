@@ -16,7 +16,8 @@
 	--selection-bg: #3d3b40;
 
 	/* Typography */
-	--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+	/*--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;*/
+	--font-family: "Inter";
 	--line-height: 1.5;
 
 	--font-size: 14px;
@@ -39,4 +40,10 @@
 	/* Miscelaneous */
 	--border-radius: .25rem;
 	--hover-transition: all 150ms ease;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    --font-family: "Inter var", sans-serif;
+  }
 }
