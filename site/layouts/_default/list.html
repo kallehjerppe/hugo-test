@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "headline" (dict "imageUrl" "/img/blog-index.png" "title" "blog") }}
+{{ partial "headline" (dict "imageUrl" "/img/blog-index.png" "title" .Params.title) }}
 
 <div class="mw7 center">
   <ul class="flex-ns flex-wrap mhn1-ns pa3">
