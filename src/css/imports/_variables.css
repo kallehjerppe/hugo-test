@@ -41,9 +41,3 @@
 	--border-radius: .25rem;
 	--hover-transition: all 150ms ease;
 }
-
-@supports (font-variation-settings: normal) {
-  :root {
-    --font-family: "Inter var", sans-serif;
-  }
-}
