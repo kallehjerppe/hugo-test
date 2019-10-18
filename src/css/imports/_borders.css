@@ -33,4 +33,4 @@
   .bn-l { border-style: none; border-width: 0; }
 }
 
-.b-primary: { border: 1px solid var(--primary);  }
+.b-primary { border: 1px solid var(--primary);  }
