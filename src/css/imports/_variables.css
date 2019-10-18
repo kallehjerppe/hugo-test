@@ -12,7 +12,7 @@
 
 	--theme-1: rgba(40, 51, 35, 1);
 	--theme-2: #3d3b40;
-	--theme-text: #75715E;
+	--theme-text: white;
 	--selection-bg: #3d3b40;
 
 	/* Typography */
@@ -24,8 +24,8 @@
 	--font-size-m: 16px;
 	--font-size-l: 18px;
 
-	--body-font-weight: 400;
-	--bold-font-weight: 700;
+	--body-font-weight: 100;
+	--bold-font-weight: bold;
 
 	/* Sizing */
 	--spacing-none: 0;
