@@ -32,3 +32,5 @@
   .bl-l { border-left-style: solid; border-left-width: 1px; }
   .bn-l { border-style: none; border-width: 0; }
 }
+
+.b-primary: { border: 1px solid var(--primary);  }
