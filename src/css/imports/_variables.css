@@ -11,14 +11,15 @@
 	--black: rgba(43, 37, 35, 1);
 	--black-2: rgba(24, 25, 21, 1);
 
-	--theme-1: rgba(40, 51, 35, 1);
+	/*--theme-1: rgba(40, 51, 35, 1);*/
+	--theme-1: rgba(24, 25, 21, 1);
 	--theme-2: #3d3b40;
 	--theme-text: white;
 	--selection-bg: #3d3b40;
 
 	/* Typography */
 	/*--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;*/
-	--font-family: "Inter, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif";
+	--font-family: "Inter", -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
 	--line-height: 1.5;
 
 	--font-size: 14px;
