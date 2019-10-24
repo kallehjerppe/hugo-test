@@ -11,6 +11,10 @@
 
 .flex-none { flex: none; }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .flex-column  { flex-direction: column; }
 .flex-row     { flex-direction: row; }
 .flex-wrap    { flex-wrap: wrap; }
