@@ -1,12 +1,12 @@
 {{ define "main" }}
-
-{{ partial "jumbotron" (dict "imageUrl" .Params.imageUrl "title" .Params.Title "subtitle" .Params.Description) }}
-<div class="flex justify-between highlight ml3">
-  <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-</div>
-<div class="cms mw6 ml3 mr3">
-  {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
-  {{ .Content }}
-</div>
-
+<main class="flex-auto">
+  {{ partial "jumbotron" (dict "imageUrl" .Params.imageUrl "title" .Params.Title "subtitle" .Params.Description) }}
+  <div class="flex justify-between highlight ml3">
+    <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+  </div>
+  <div class="cms mw6 ml3 mr3">
+    {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+    {{ .Content }}
+  </div>
+</main>
 {{ end }}

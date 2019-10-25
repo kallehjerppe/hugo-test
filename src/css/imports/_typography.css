@@ -148,3 +148,7 @@ sup {
     text-overflow: ellipsis;
   }
 }
+
+.code {
+  font-family: monospace;
+}
