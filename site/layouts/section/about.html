@@ -3,17 +3,27 @@
 <main class="flex flex-column flex-auto">
   {{ partial "headline" (dict "title" .Params.title) }}
   <div class="flex flex-wrap justify-between">
-    <div class="ba ph2 pv2 code ma3 mw5">
-      <div><img src="/img/keybase.png" class="w1 mr1"/>{{ .Params.keybase }}</div>
-      <div>
-        <a href="https://github.com/{{ .Params.github }}" target="_blank">
-          <img src="/img/github.png" class="w1 mr1"/>{{ .Params.github }}
-        </a>
+    <div class="code ma3 mw5">
+      <div class="ba pa2">
+        <div><img src="/img/keybase.png" class="w1 mr1"/>{{ .Params.keybase }}</div>
+        <div>
+          <a href="https://github.com/{{ .Params.github }}" target="_blank">
+            <img src="/img/github.png" class="w1 mr1"/>{{ .Params.github }}
+          </a>
+        </div>
+        <div>{{ .Params.email }}</div>
       </div>
-      <div>{{ .Params.email }}</div>
     </div>
     <div class="ba ph2 pv2 ma3">
       todo: img
+    </div>
+  </div>
+  <div class="flex flex-wrap items-center">
+    <div class="ma3 mr0">
+      Working for
+    </div>
+    <div class="ma3 mw4">
+      <a href="{{ .Params.company }}" target="_blank"><img src="/img/company.png" alt="employer" /></a>
     </div>
   </div>
   <div></div>
