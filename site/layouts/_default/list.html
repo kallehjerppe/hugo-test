@@ -5,7 +5,7 @@
 <div class="mw7 ml2 mr2 flex-auto">
   <ul class="flex-ns flex-wrap mhn1-ns pa3 pt0">
       {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-          <li class="w-50-ns ph1-ns flex">
+          <li class="w-100 ph1-ns flex">
             {{ .Render "li"}}
           </li>
       {{ end }}
