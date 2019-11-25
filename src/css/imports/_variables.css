@@ -3,7 +3,7 @@
 	--primary: #3d3b40;
 	--highlight: rgba(166, 226, 43, 1);
 	--white: rgba(255, 255, 255, 1);
-	--off-white: rgba(248, 248, 242, 1);
+	--off-white: #f0f0f0;
 	--grey-1: rgba(245, 243, 242, 1);
 	--grey-2: rgba(235, 231, 230, 1);
 	--grey-3: rgba(89, 87, 86, 1);
@@ -20,11 +20,13 @@
 	/* Typography */
 	/*--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;*/
 	--font-family: "Inter", -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+	--font-family-cms: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 	--line-height: 1.5;
 
 	--font-size: 14px;
 	--font-size-m: 14px;
 	--font-size-l: 16px;
+	--font-size-cms: 18px;
 
 	--body-font-weight: 100;
 	--bold-font-weight: 300;

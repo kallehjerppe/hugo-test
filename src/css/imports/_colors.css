@@ -16,6 +16,10 @@
   color: var(--off-white);
 }
 
+.light-grey {
+  color: #dddddd;
+}
+
 .grey-1 {
   color: var(--grey-1);
 }

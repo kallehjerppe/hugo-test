@@ -1,10 +1,10 @@
 {{ define "main" }}
 <main class="flex-auto">
   {{ partial "jumbotron" (dict "imageUrl" .Params.imageUrl "title" .Params.Title "subtitle" .Params.Description) }}
-  <div class="flex justify-between highlight ml3">
+  <div class="flex justify-between highlight ml3 ml0-ns pl6-ns">
     <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
   </div>
-  <div class="cms mw6 ml3 mr3">
+  <div class="cms pa3 pa6-ns pt5-ns">
     {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
     {{ .Content }}
   </div>
