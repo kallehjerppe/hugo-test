@@ -1,5 +1,6 @@
 ::selection {
   background-color: var(--selection-bg);
+  color: white;
 }
 
 /* Used in the navbar */

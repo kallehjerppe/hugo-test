@@ -1,20 +1,29 @@
 {{ if .imageUrl }}
-<div class="pv2 ph3 bg-center cover bb b--grey-4 bw1 pl6-ns" style="background-image: url('{{.imageUrl}}')">
+<div class="pv2 ph3 bg-center cover bb b--grey-4 pl6-ns" style="background-image: url('{{.imageUrl}}')">
 {{ else }}
-<div class="pv2 ph3 bg-center cover bb b--grey-4 bw1 pl6-ns">
+<div class="pv2 ph3 bg-center cover bb b--grey-4 pl6-ns">
 {{ end }}
   <div>
     <div class="db mb3">
       <div class="mw7 relative mb3">
-        <h1 class="f2 b di lh-title mb3 white mw6">
+        {{ if .white }}
+          <h1 class="f2 b di lh-title mb3 mw6 black">
+        {{ else }}
+          <h1 class="f2 b di lh-title mb3 mw6 white">
+        {{ end }}
           {{.title}}
         </h1>
       </div>
       <div class="mw7 relative">
         {{ if .subtitle }}
-        <p class="b f4 di lh-title mb3 light-grey mw6">
-          {{.subtitle}}
-        </p>
+          {{ if .white }}
+            <p class="b f4 di lh-title mb3 black mw6">
+          {{ else }}
+            <p class="b f4 di lh-title mb3 light-grey mw6">
+          {{ end }}
+
+            {{.subtitle}}
+          </p>
         {{ end }}
       </div>
     </div>

@@ -29,7 +29,7 @@
 	--font-size-cms: 18px;
 
 	--body-font-weight: 100;
-	--bold-font-weight: 300;
+	--bold-font-weight: bold;
 
 	/* Sizing */
 	--spacing-none: 0;

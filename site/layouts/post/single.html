@@ -1,8 +1,8 @@
 {{ define "main" }}
-<main class="flex-auto flex-no-shrink">
-  {{ partial "jumbotron" (dict "imageUrl" .Params.imageUrl "title" .Params.Title "subtitle" .Params.Description) }}
-  <div class="flex justify-between highlight ml3 ml0-ns pl6-ns">
-    <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+<main class="flex-auto flex-no-shrink bg-off-white pt3">
+  {{ partial "jumbotron" (dict "imageUrl" .Params.imageUrl "title" .Params.Title "subtitle" .Params.Description "white" "true") }}
+  <div class="flex justify-between highlight ml3 ml0-ns pl6-ns fw4 mt2 mb2">
+    {{ .Date.Format "Mon, Jan 2, 2006" }}
   </div>
   <div class="cms pa3 pa6-ns pt5-ns">
     {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}

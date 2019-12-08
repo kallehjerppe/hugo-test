@@ -2,15 +2,15 @@
 
 {{ partial "headline" (dict "title" .Params.title) }}
 
-<div class="mw7 ml2 mr2 flex-auto">
+<main class="flex-auto bg-off-white w-100 pt3 fw3">
   <ul class="flex-ns flex-wrap mhn1-ns pa3 pt0">
       {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-          <li class="w-100 ph1-ns flex">
+          <li class="mw7 ph1-ns flex">
             {{ .Render "li"}}
           </li>
       {{ end }}
   </ul>
   {{ partial "pagination" . }}
-</div>
+</main>
 
 {{end}}
