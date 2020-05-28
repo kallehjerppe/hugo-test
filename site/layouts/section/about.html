@@ -1,10 +1,10 @@
 {{ define "main" }}
 
 <main class="flex flex-column flex-auto flex-no-shrink">
-  {{ partial "headline" (dict "title" .Params.title_informal) }}
+  {{ partial "headline" (dict "title" .Params.title "inverse" true) }}
   <div class="flex flex-wrap justify-between-ns justify-center">
     <div class="code ma3 w5-ns w-100">
-      <div class="pa2 ba b--grey-4 br1 bg-off-white black">
+      <div class="pa2 ba b--grey-4 br1 bg-off-white black card">
         <div><img src="/img/keybase.png" alt="keybase" class="w1 mr1"/>{{ .Params.keybase }}</div>
         <div>
           <a href="https://github.com/{{ .Params.github }}" target="_blank" rel="noopener">
@@ -14,7 +14,7 @@
         <div>{{ .Params.email }}</div>
       </div>
     </div>
-    <img src="/img/profile.jpg" alt="face" class="w5 h5 ma3 ba" />
+    <img src="/img/profile.jpg" alt="face" class="w5 h5 ma3 ba card" />
   </div>
   <div class="flex flex-wrap justify-between-ns justify-center">
     <div>
@@ -23,7 +23,7 @@
           Working for
         </div>
         <div class="ma3">
-          <a href="{{ .Params.company }}" target="_blank" rel="noopener"><img src="/img/company.png" alt="employer" class="ba w4"/></a>
+          <a href="{{ .Params.company }}" target="_blank" rel="noopener"><img src="/img/company.png" alt="employer" class="ba w4 card"/></a>
         </div>
       </div>
       <div class="flex flex-wrap items-center">
@@ -31,12 +31,12 @@
           Studying at
         </div>
         <div class="ma3">
-          <a href="{{ .Params.university }}" target="_blank" rel="noopener"><img src="/img/university.jpg" alt="university" class="ba w4"/></a>
+          <a href="{{ .Params.university }}" target="_blank" rel="noopener"><img src="/img/university.jpg" alt="university" class="ba w4 card"/></a>
         </div>
       </div>
     </div>
     <div class="ma3 h5 w-100 w-50-ns">
-      <div class="pa2 ba b--grey-4 br1 bg-off-white black fw4">
+      <div class="pa2 ba b--grey-4 br1 bg-off-white black fw4 card">
         <h3>Interests:</h3>
         <ul class="ml4 list-circle">
           <li>Software architectures</li>

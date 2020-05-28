@@ -3,9 +3,9 @@
 {{ partial "headline" (dict "title" .Params.title) }}
 
 <main class="flex-auto bg-off-white w-100 pt3 fw3">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3 pt0">
+  <ul class="mhn1-ns pa3 pt0">
       {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-          <li class="mw7 ph1-ns flex">
+          <li class="flex">
             {{ .Render "li"}}
           </li>
       {{ end }}
