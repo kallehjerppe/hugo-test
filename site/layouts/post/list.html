@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+{{ partial "headline" (dict "title" .Params.title) }}
+
+<main class="flex-auto bg-off-white w-100 pt3 fw3">
+  <ul class="mhn1-ns pa3 pt0">
+      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
+          <li class="flex">
+            {{ .Render "li"}}
+          </li>
+      {{ end }}
+  </ul>
+  {{ partial "pagination" . }}
+  <h2 class="b di lh-title mb3 black mw6 ml3">My posts elsewhere</h2>
+  <ul class="mhn1-ns pa3 pt0 black">
+      {{ range $.Site.Data.externalposts }}
+          <li class="flex">
+            <a href="{{ .url }}" target="_blank" rel="noopener">{{ .Title }}</a>
+          </li>
+      {{ end }}
+  </ul>
+</main>
+
+{{end}}
