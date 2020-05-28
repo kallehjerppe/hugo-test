@@ -1,4 +1,6 @@
-<form name="commentinglead" method="POST" netlify class="cms pa1">
+<form name="commentinglead" method="POST" netlify class="cms pa1" style="font-size: 0.9rem;">
+	<input name="article" type="hidden" value="{{ .article }}" />
   	By the way, press this button if you think there should be comments or some other interactive stuff here
     <button type="submit">⭐</button>
+    <div>(just increments a counter in netlify)</div>
 </form>
