@@ -2,7 +2,7 @@
 <main class="flex-auto flex-no-shrink bg-off-white pt3">
   {{ partial "jumbotron" (dict "imageUrl" .Params.imageUrl "title" .Params.Title "subtitle" .Params.Description "white" "true") }}
   <div class="flex justify-between highlight ml3 fw5 mt2 mb2">
-    {{ .Date.Format "Jan, 2006" }}
+    {{ .Date.Format "Jan, 2006" }} - {{ .Params.Authors }}
   </div>
   <div class="cms pa3">
     {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
