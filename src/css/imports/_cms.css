@@ -1,7 +1,4 @@
 .cms {
-
-  font-family: var(--font-family-cms);
-  font-size: var(--font-size-cms);
   letter-spacing: 0.01em;
   background: white;
   border: 1px solid gray;
@@ -37,7 +34,8 @@
 
   & p {
     font-weight: 400;
-    max-width: 36rem;
+    max-width: 40rem;
+    text-align: justify;
   }
 
     /* Images */
