@@ -1,4 +1,7 @@
-<form name="commentinglead" method="POST" netlify class="cms pa1" style="font-size: 0.9rem;">
+<form name="commentinglead" netlify-honeypot="bot-field" method="POST" netlify class="cms pa1" style="font-size: 0.9rem;">
+	<p class="dn">
+      Don’t fill this out if you're human: <input name="bot-field" />
+    </p>
 	<input name="article" type="hidden" value="{{ .article }}" />
   	By the way, press this button if you think there should be comments or some other interactive stuff here
     <button type="submit">⭐</button>
