@@ -2,8 +2,8 @@
 title: about
 title_informal: hello
 github: kallehjerppe
-email: first.last@geniem.com
+email: first.last@tyks.fi
 keybase: kallehj
-company: https://geniem.fi
+company: https://www.vsshp.fi/
 university: https://tech.utu.fi
 ---
