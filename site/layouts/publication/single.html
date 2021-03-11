@@ -4,7 +4,7 @@
   <div class="flex justify-between highlight ml3 fw5 mt2 mb2">
     {{ .Date.Format "Jan, 2006" }} - {{ .Params.Authors }}
   </div>
-  <div class="cms pa3">
+  <div class="cms pa3 pa4-ns">
     {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
     {{ .Content }}
   </div>
